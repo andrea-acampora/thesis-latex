@@ -1,1 +1,1 @@
-# thesis-latex
+# Alchemist-thesis-latex
