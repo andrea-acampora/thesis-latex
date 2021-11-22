@@ -12,12 +12,18 @@
 \usepackage{xcolor}
 \usepackage{latexsym}
 \usepackage{listings}
+<<<<<<< HEAD
 \usepackage{minted}
 \usepackage{tikz}
 \usepackage{ifthen}
 
 \usepackage[hidelinks]{hyperref}
 
+=======
+\usepackage{tikz}
+\usepackage{ifthen}
+\usepackage[hydelinks]{hyperref}
+>>>>>>> Added project
 
 \usepackage[italian]{cleveref}
 \usepackage[italian]{babel}
@@ -25,6 +31,16 @@
 
 \newenvironment{abstract}{\chapter*{\centering\abstractname}\addcontentsline{toc}{chapter}{\abstractname}}{} 
 
+<<<<<<< HEAD
+=======
+\ifthenelse{\equal{italian}{\thesislang}}{
+	\crefname{lstlisting}{listing}{listato}
+}{
+	\crefname{lstlisting}{listing}{listing}	
+}
+\Crefname{lstlisting}{Listing}{\lstlistingname}
+
+>>>>>>> Added project
 \lstset{
 	showstringspaces=false,
 	basicstyle=\ttfamily,

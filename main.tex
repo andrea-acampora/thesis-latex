@@ -1,6 +1,10 @@
 \documentclass[12pt,a4paper,openright,oneside]{book}
 \usepackage{my-style}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Added project
 \author{Andrea Acampora}
 
 \begin{document}
@@ -9,18 +13,23 @@
 \input{Frontespizio.tex}
 
 \begin{abstract}
+<<<<<<< HEAD
 Le simulazioni computerizzate sono uno strumento vitale utilizzato nell'analisi del comportamento di sistemi complessi.
 Ad oggi le simulazioni sono diventate parte integrante dell'ingegneria dei sistemi computazionali, principalmente durante la fase di progettazione per testare, convalidare e prevedere il comportamento del sistema prima di iniziare l'effettiva fase di dispiegamento.
 In generale, le simulazioni computerizzate richiedono la definizione di un modello del dominio, la sua implementazione eseguibile, l'effettiva esecuzione e la produzione dei dati di output.
 L'esportazione dei dati è un aspetto chiave nel contesto delle simulazioni computerizzate, in quanto rappresenta l'output dell'operazione di simulazione.
 Lo scopo di questo lavoro è quello di analizzare il dominio della generazione di dati tramite simulazione, analizzare lo stato dell'arte e infine applicare quanto appreso nella ri-progettazione di un modulo di esportazione dati per il simulatore Alchemist.
 Fra gli altri, il nuovo modulo dovrà superare le limitazioni del sistema originale in termini di flessibilità e prestazioni.
+=======
+    TODO\\
+>>>>>>> Added project
 \end{abstract}
 
 \tableofcontents
 
 \mainmatter
 
+<<<<<<< HEAD
 \chapter{Contesto e Motivazioni}
 
 \section{Le simulazioni computerizzate}
@@ -614,5 +623,38 @@ terminate:
   - type: AfterTime
     parameters: 5
 \end{minted}
+=======
+\chapter{Il simulatore Alchemist}
+\section{Introduzione al simulatore}
+\section{Analisi del modello di dominio}
+\section{Funzionalità ed utilizzi del simulatore}
+
+\newpage
+\chapter{Export dei dati delle simulazioni in Alchemist}
+\section{Introduzione}
+L'export dei dati è un aspetto molto importante per il simulatore in quanto permette di avere un resoconto della simulazione effettuata e di ciò che la computazione ha generato.\\
+In situazioni in cui non è possibile monitorare la simulazione in tempo reale risulta indispensabile avere dei metodi per poter analizzare l'output del simulatore.
+
+\section{Analisi dell'architettura esistente}
+
+L'attuale sistema di Export è basato sulla scrittura dei dati della simulazione su un file di testo in formato CSV.
+La classe responsabile dell'esportazione dei dati è l'\textit{Exporter} che implementa direttamente il boundary OutputMonitor.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/Old-Architecture.jpeg}
+    \caption{Schema UML della architettura esistente}
+    \label{fig:UML_old_arch}
+\end{figure}
+
+
+\section{Analisi della nuova architettura}
+\subsection{Analisi dei requisiti}
+\subsection{Modello del dominio}
+
+\section{Design della nuova architettura}
+
+
+>>>>>>> Added project
 
 \end{document}
